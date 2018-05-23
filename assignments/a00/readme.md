@@ -96,7 +96,7 @@ In order to access the IDE again, run Docker and type the following:
 $ docker start cs50ide
 ```
 
-## 4. Running a C++ program in the CS50IDE
+## 4. Running a C program in the CS50IDE
 
 ### 4.1 New Interface
 
@@ -104,19 +104,16 @@ You should now be staring at your brand new IDE. Click on 'File', then select, "
 
 ![Screen shot of the IDE](https://github.com/URI-CSC/csc-212-s17/blob/master/lab-00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
 
-Once you have your new file, you may start typing and wonder why there is no Syntax Highlighting. The way fix this is to save your file as a '.cpp' file. Save your new file now as, 'hello.cpp'. We assume you know how to save files.
+Once you have your new file, you may start typing and wonder why there is no Syntax Highlighting. The way fix this is to save your file as a '.c' file. Save your new file now as, 'hello.c'. 
 
 ### 4.2 Typing it out
 
 Here we will be able write our first program in the file window. Feel free to write your own "Hello World!" program.
 
-
-```c++
-#include <iostream>
-
+```c
 int main()
 {	
-	std::cout << "Hello World!" << std::endl;
+	printf("Hello World!");
 	return 0;
 }
 ```
@@ -133,12 +130,12 @@ Time to put the bash terminal to use. If you have never used a shell, or bash be
 $ ls
 ```
 
-You should see, `hello.cpp` or whatever you named your file.
+You should see, `hello.c` or whatever you named your file.
 
-Next is to compile your program. We will use `g++`. Simply type this below:
+Next is to compile your program. We will use `gcc`. Simply type this below:
 
 ```bash
-$ g++ hello.cpp -g -o hello
+$ gcc hello.c -g -o hello
 ``` 
 
 `-g` tells the compiler to include debugging symbols which allow you to use breakpoints to debug your code
@@ -157,7 +154,7 @@ Voila, you have just run, "Hello World!"
 
 ### 4.5 Shell Hints
 
-Before we move on, there are a few things about the shell you should know. The up arrow goes to previous commands. And if you think the computer can guess what you are typing, you can hit TAB to have it completed for you. For example, if `g++ hel` is typed in terminal, and the TAB key is hit, the rest of the file name will be filed in.
+Before we move on, there are a few things about the shell you should know. The up arrow goes to previous commands. And if you think the computer can guess what you are typing, you can hit TAB to have it completed for you. For example, if `gcc hel` is typed in terminal, and the TAB key is hit, the rest of the file name will be filed in.
 
 ## 5. Step-by-Step Debugging of "Hello World"
 
@@ -190,66 +187,13 @@ The top row of buttons allow you to navigate and execute your code. From Left to
 It may help to practice debugging another program. Debugging this program will also show how the debugger displays information on the program's variables. 
 
 Create and debug each line of the following program:
-```c++
-#include <iostream>
 
+```c
 int main() {
     int a = 2;
     int b = 4;
     int c = a + b;
-    std::cout << c << std::endl;
     return 0;
 }
 ```
 You will notice some new information in your debugger window, under Local Variables. Play around with the debugger until you are satisfied. 
-
-## 6. Exercises
-
->___Please record the answers to the following questions on a separate file.  Your attendance will be recorded after you submit these answers to the Google Form.___
-
-### 6.1: Exercise 1
-
-> If you are not familiar with arrays, read [this](http://www.cplusplus.com/doc/tutorial/arrays/) first.
-
-For this exercise you will create an integer array of 10 elements and print the memory addresses of each element. You can fill the array with any values you like, or leave it empty.  The contents of the array do not matter for this exercise.  The syntax to print the memory address of the 3rd element in an array is as follows: 
-
-```c++
-std::cout << &array[2] << std::endl;
-```
-
-Remember to print newlines after every value to help readability (`std::endl` or `'\n'`). Make sure to `#include <iostream>` so that you can use `std::cout` to print your results for each exercise.
-
-#### Questions
-
-1. What is the range of the memory addresses of the array?  (Optionally, try changing the size of the array to see what happens)
-2. What is the difference between the addresses of two consecutive elements in the array?  Is this constant throughout the whole array?
-3. How do these factors change when you declare your array as a `long int` instead of `int`?
-4. How do these factors change when you declare your array as a `double` instead of `int`?
-5. How do these factors change when you declare your array as a `char` instead of `int`?
-
-### 6.2: Exercise 2
-
-> If you are not familiar with character sequences (strings), read [this](http://www.cplusplus.com/doc/tutorial/ntcs/) first.
-
-For this exercise, you will be creating a character array and use it to investigate C style strings and their behaviors.  Declare and initialize the character array as follows:
-```c++
-char str[15] = "Hello CSC212";
-```
-Ensure you use double quotes for this operation.  Your program will be able to tell how long the string is due to the `'\0'` or `null` character inserted automatically by the assignment.  
-
-Write a loop to traverse the string and print out its length (number of characters excluding the `null` character).  You can tell you've reached the end of the string when you find the `null` character (This character is always equal to 0).  
-
-Next, using the same loop print out the value of each character as a numeric value.  You can accomplish that with the following line:
-```c++
-std::cout << (int) str[counter] << std::endl;
-```
-#### Questions
-1. What is the maximum length of a string you can store in this array? How many bytes long is that?
-2. What is the memory address of the null character?
-3. What happens if you try to assign a string longer than the max length?  If you are unsure, try it!
-4. What do the numeric values printed out when a `char` is cast to an int represent?
-5. What happens if you print the contents of the array without making an assignment (initializing the array)?
-6. What happens if you print the contents of the array past the `null` character?
-
-## Google Form submission
-[Form Link](https://goo.gl/forms/jw55Kxq8f7oPn9bs2)
