@@ -24,7 +24,7 @@ Take a second to gloss over your corresponding page for information about docker
 - [Mac 10.10.3+ Docker documentation](https://docs.docker.com/docker-for-mac/)
 - [Docker Tookbox documentation](https://docs.docker.com/toolbox/overview/)
 
-Once you have been bored out of your mind with these pages, you may then proceed to look at some docker commands, and some information on how docker works.
+If you'd like to look at some docker commands, and some information on how docker works:
 
 - [Docker Information / Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet#containers)
 
@@ -87,7 +87,6 @@ For example:
 > [http://192.168.99.100:5050](http://192.168.99.100:5050)
 
 ### 3.2 Important Notes:
-
 
 1. At this point you may notice a banner along the top of your window noting that your current version is out of date, you're welcome to update now, though it won't make any difference for this lab. To update, run `update50` in the built-in shell, which should be titled 'workspace/'. You'll then have to restart the docker instance by running `docker restart cs50ide` **Please note that this name may be different than the one the IDE will tell you to restart**
 
