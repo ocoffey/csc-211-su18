@@ -152,7 +152,7 @@ $ docker start ide50
 
 You should now be staring at your brand new IDE. Click on 'File', then select, "New File". Here is the basic anatomy of this screen featuring MSPaint.
 
-![Screen shot of the IDE](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
+![Screen shot of the IDE](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
 
 Once you have your new file, you may start typing and wonder why there is no Syntax Highlighting. The way fix this is to save your file as a '.c' file. Save your new file now as, 'hello.c'. 
 
@@ -217,7 +217,7 @@ Now you will running your program in debug mode; this mode allows you to run cod
 ### 5.1 Setting a Breakpoint
 
 Before you start debugging you must set a breakpoint in your code. In debug mode, your program will run normally until it reaches the breakpoint. You are now in control of when your program executes its lines of code. To set a breakpoint, click  on the light gray space in your file window that is to the left of the numbers column, on the line that you wish to start debugging. A big red circle should appear after clicking once, with a C++ example shown below:
-![image](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/breakpoint.png)
+![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/breakpoint.png)
 
 ### 5.2 Running in Debug Mode
 
