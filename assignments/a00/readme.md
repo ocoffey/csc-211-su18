@@ -2,7 +2,7 @@
 
 ## 1. Installing Docker
 
-> **If you already have Docker installed, you may skip this step and go to step [2. Cleaning a Docker Installation](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/readme.md#2-cleaning-a-docker-installation-optional-for-fresh-installs)**
+> **If you already have Docker installed, you may skip this step and go to step [2. Cleaning a Docker Installation](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/readme.md#2-cleaning-a-docker-installation-optional-for-fresh-installs)**
 
 ### 1.1 Downloads
 
@@ -120,7 +120,7 @@ $ docker start cs50ide
 
 You should now be staring at your brand new IDE. Click on 'File', then select, "New File". Here is the basic anatomy of this screen featuring MSPaint.
 
-![Screen shot of the IDE](https://github.com/URI-CSC/csc-212-s17/blob/master/lab-00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
+![Screen shot of the IDE](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
 
 Once you have your new file, you may start typing and wonder why there is no Syntax Highlighting. The way fix this is to save your file as a '.c' file. Save your new file now as, 'hello.c'. 
 
@@ -190,13 +190,13 @@ Now that you've set a breakpoint, we must run the program in debug mode. You can
 ```bash
 $ debug50 hello
 ```
-![Screen shot of the debug cmd](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/debug50.png "Debug Command")
+![Screen shot of the debug cmd](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/debug50.png "Debug Command")
 
 ### 5.3 Debugging "Hello World"
 
 You should notice that your program stops executing at the breakpoint, and the line with the breakpoint is highlighted yellow. When debugging, the highlighted line is the next line of code to be executed. To the right you should see the debugging window, as shown below.   
 
-![image](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/debugWindow.png)  
+![image](https://github.com/URI-CSC/csc-211-su18/blob/master/lab-00/debugWindow.png)  
 
 The top row of buttons allow you to navigate and execute your code. From Left to Right: The play button, or the resume button, will stop debugging and run your program normally until it reaches another breakpoint, end of program, or a runtime error, and then starts debugging again. The Step Over and Step Into buttons will both execute the next line of code. They perform differently when the next line of code includes a function. The Step Over button will execute the function call completely and finish executing the current line. The Step Into button will instead move the debugger to that function's code and continue debugging there. The Step Out button can be pressed when you are inside a function call to finish the function call and return to the original line of code that called that function. The Deactivate All Breakpoints button is self explanatory.  
 
