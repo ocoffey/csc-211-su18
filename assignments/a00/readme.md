@@ -1,4 +1,4 @@
-# Lab 01: C++, Docker, and CS50, oh my!
+# Assignment 00: Docker and CS50 (ungraded)
 
 ## 1. Installing Docker
 
@@ -25,6 +25,14 @@ Select the appropriate distro from here, and follow all instructions: [Docker Co
 #### Non-compatible Windows and Mac Solution
 
 If you are on Windows or Mac, and do not meet the requirements above, you **must** install the [Docker Toolbox](https://docs.docker.com/toolbox/overview/).
+
+#### Side-note for Linux Users
+
+If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands and a text editor such as [vim](https://www.vim.org/) or [emacs](https://www.gnu.org/software/emacs/). If you would like to try something new and exciting, all instructors can help with bash commands and vim shortcuts.
+
+HOWEVER, Docker allows for the use of the [CS50 IDE Offline](https://manual.cs50.net/ide/offline).  This is the default IDE for this class and instructors will be able to provide the best support to students who use this IDE.
+
+Additionally, it is highly likely that you will use docker in the future. If you would like to install docker for linux, refer to the appropriate section above.
 
 ### 1.2 Documentation
 
