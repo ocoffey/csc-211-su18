@@ -105,7 +105,7 @@ $ docker rmi $(docker images -q)
 
 ## 3. CS50 IDE
 
-### Installation
+### 3.1 Installation
 
 In this class we will be using the cs50ide, kindly provided [here](https://manual.cs50.net/ide/offline).
 
@@ -113,7 +113,11 @@ Please use the above link to install the IDE to your system.
 
 > If you run the command provided and receive a `docker: Got permission denied ...` error, you **must** prepend `sudo ` to the command. As in: `sudo docker run --privileged -e "IP=127.0.0.1" -e "PORT=8080" --name ide50 -d -p 5050:5050 -p 8080-8082:8080-8082 cs50/ide`
 
-### 3.1 Ensuring the cs50ide is running:
+### 3.2 Documentation
+
+Feel free to look over, and bookmark, the documentation provided [here](https://manual.cs50.net/ide). 
+
+### 3.3 Ensuring the cs50ide is running:
 
 Click (or type if clicking doesn't work) the following in your browser to access the IDE:
 
@@ -135,7 +139,7 @@ In your browser type the ip address you received followed by the port :5050 to a
 For example, yours may look like:
 > http://192.168.99.100:5050
 
-### 3.2 Updating CD50 IDE:
+### 3.4 Updating CD50 IDE:
 
 1. At this point you may notice a banner along the top of your window noting that your current version is out of date, to update, run `update50` in the built-in shell, which should be titled 'workspace/'. You'll then have to restart the docker instance by running `docker restart ide50` in the **original terminal or powershell window** (this is the one one your desktop, not within the browser). Once you've restarted the IDE, refresh your browser to ensure you have all of the changes.
 
@@ -152,7 +156,7 @@ $ docker start ide50
 
 You should now be staring at your brand new IDE. Click on 'File', then select, "New File". Here is the basic anatomy of this screen featuring MSPaint.
 
-![Screen shot of the IDE](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/anatomy.png "Cloud9 IDE Anatomy w/ MSPaint")
+![Screen shot of the IDE](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/anatomy.png "Cloud9 IDE Annotated")
 
 Once you have your new file, you may start typing and wonder why there is no Syntax Highlighting. The way fix this is to save your file as a '.c' file. Save your new file now as, 'hello.c'. 
 
@@ -217,7 +221,7 @@ Now you will running your program in debug mode; this mode allows you to run cod
 ### 5.1 Setting a Breakpoint
 
 Before you start debugging you must set a breakpoint in your code. In debug mode, your program will run normally until it reaches the breakpoint. You are now in control of when your program executes its lines of code. To set a breakpoint, click  on the light gray space in your file window that is to the left of the numbers column, on the line that you wish to start debugging. A big red circle should appear after clicking once, with a C++ example shown below:
-![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/breakpoint.png)
+![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/breakpoint.png "Setting a breakpoint")
 
 ### 5.2 Running in Debug Mode
 
@@ -226,7 +230,7 @@ Now that you've set a breakpoint, we must run the program in debug mode. You can
 ```bash
 $ debug50 hello
 ```
-![Screen shot of the debug cmd](/debug50.png "Debug Command")
+![Screen shot of the debug cmd](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/debug50.png "Debug Command")
 
 ### 5.3 Debugging "Hello World"
 
@@ -234,13 +238,13 @@ You should notice that your program stops executing at the breakpoint, and the l
 
 ![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/debugWindow.png)  
 
-The top row of buttons allow you to navigate and execute your code. From Left to Right: The play button, or the resume button, will stop debugging and run your program normally until it reaches another breakpoint, end of program, or a runtime error, and then starts debugging again. The Step Over and Step Into buttons will both execute the next line of code. They perform differently when the next line of code includes a function. The Step Over button will execute the function call completely and finish executing the current line. The Step Into button will instead move the debugger to that function's code and continue debugging there. The Step Out button can be pressed when you are inside a function call to finish the function call and return to the original line of code that called that function. The Deactivate All Breakpoints button is self explanatory.  
+The top row of buttons allow you to navigate and execute your code. From Left to Right: The play button, or the 'Resume' button, will stop debugging and run your program normally until it reaches another breakpoint, end of program, or a runtime error. The 'Step Over' and 'Step Into' buttons will both execute the next line of code. They perform differently when the next line of code includes a function. The Step Over button will execute the function call completely and finish executing the current line. The Step Into button will instead move the debugger to that function's code and continue debugging there. The Step Out button can be pressed when you are inside a function call to finish the function call and return to the original line of code that called that function. The Deactivate All Breakpoints button does just that.  
 
 ### 5.4 Debugging Another Program
 
 It may help to practice debugging another program. Debugging this program will also show how the debugger displays information on the program's variables. 
 
-Create and debug each line of the following program:
+Set a breakpoint for the first line (`int a = 2;`), and use the 'Step Over' command to view the 'Local Variables' at every 'step' in the execution of this program.
 
 ```c
 int main() {
@@ -250,4 +254,5 @@ int main() {
     return 0;
 }
 ```
-You will notice some new information in your debugger window, under Local Variables. Play around with the debugger until you are satisfied. 
+
+In the 'Local Variables' section, you can double click any value, and change it on the fly. Rerun your debugger and try this, and see how it impacts the variable `c`.
