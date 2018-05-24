@@ -1,4 +1,4 @@
-# Lab 01: C++, Docker, and CS50, oh my!
+# Assignment 00: Docker and CS50 (ungraded)
 
 > **IF you ALREADY HAVE docker installed skip [1. Installing Docker](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/readme.md#1-installing-docker), and go to ['2. Cleaning a Docker Installation'](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/readme.md#2-cleaning-a-docker-installation-optional-for-fresh-installs)**
 
@@ -8,7 +8,7 @@
 
 >If you have have _Windows 10 Pro or macOS 10.10.3+_, you can install Docker from the website [Docker Download Page](https://www.docker.com/community-edition#/download)
 
->If you DO NOT have _Windows 10 Pro or macOS 10.10.3 and above_, you need to install the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
+>If you DO NOT have _Windows 10 Pro or macOS 10.10.3 and above_, you need to install the [Docker Toolbox](https://docs.docker.com/toolbox/).
 
 If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands. If you would like to try something new and exciting, all instructors can help with bash commands and vim shortcuts. This class will use g++ as a compiler. 
 
