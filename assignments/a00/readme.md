@@ -10,11 +10,11 @@
 
 >If you DO NOT have _Windows 10 Pro or macOS 10.10.3 and above_, you need to install the [Docker Toolbox](https://docs.docker.com/toolbox/).
 
-If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands. If you would like to try something new and exciting, all instructors can help with bash commands and vim shortcuts. This class will use g++ as a compiler. 
+If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands and a text editor such as [vim](https://www.vim.org/) or [emacs](https://www.gnu.org/software/emacs/). If you would like to try something new and exciting, all instructors can help with bash commands and vim shortcuts.
 
-HOWEVER, Docker allows for the use of the [CS50 IDE Offline](https://manual.cs50.net/ide/offline).  This is the IDE that we will show examples in and as instructors we will be able to provide the best support to students who use this IDE. It includes the same compilers that we will be using as instructors and should make your experience easier in general.
+HOWEVER, Docker allows for the use of the [CS50 IDE Offline](https://manual.cs50.net/ide/offline).  This is the default IDE for this class and instructors will be able to provide the best support to students who use this IDE.
 
-Additionally, there is a high likelyhood that you will use docker in the future. If would like to install docker select your distribution of linux, then click on community edition (CE) [Linux Docker.](https://docs.docker.com/engine/installation/#server) The linux installation differs from Windows and Mac, so feel free to skip over [1.3 Installing Docker](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/readme.md#13-installing-docker).
+Additionally, it is highly likely that you will use docker in the future. If you would like to install docker for linux, then select your distribution from [Docker Download Page](https://www.docker.com/community-edition#/download). The linux installation differs from Windows and Mac, so feel free to skip over [1.3 Installing Docker](https://github.com/URI-CSC/csc-212-f17/blob/master/lab-00/readme.md#13-installing-docker).
 
 ### 1.2 Documentation
 
