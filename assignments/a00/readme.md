@@ -221,12 +221,12 @@ Before you start debugging you must set a breakpoint in your code. In debug mode
 
 ### 5.2 Running in Debug Mode
 
-Now that you've set a breakpoint, we must run the program in debug mode. You can do this by running the `debug50` command.  For our example the following will run your program in debugging mode:
+Now that you've set a breakpoint, we must run the program in debug mode. You can do this by running the `debug50` command.  For our example the following will build and then run your program in debugging mode:
 
 ```bash
+$ gcc hello.c -g -o hello
 $ debug50 hello
 ```
-![Screen shot of the debug cmd](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/debug50.png "Debug Command")
 
 ### 5.3 Debugging "Hello World"
 
