@@ -217,7 +217,7 @@ Now you will running your program in debug mode; this mode allows you to run cod
 ### 5.1 Setting a Breakpoint
 
 Before you start debugging you must set a breakpoint in your code. In debug mode, your program will run normally until it reaches the breakpoint. You are now in control of when your program executes its lines of code. To set a breakpoint, click  on the light gray space in your file window that is to the left of the numbers column, on the line that you wish to start debugging. A big red circle should appear after clicking once, with a C++ example shown below:
-![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/breakpoint.png "Setting a breakpoint")
+![image](https://github.com/URI-CSC/csc-211-su18/blob/master/assignments/a00/debugger.png "Setting a breakpoint")
 
 ### 5.2 Running in Debug Mode
 
