@@ -48,11 +48,9 @@ If you are on Windows or Mac, and do not meet the requirements above, you **must
 
 #### Side-note for Linux Users
 
-If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands and a text editor such as [vim](https://www.vim.org/) or [emacs](https://www.gnu.org/software/emacs/). If you would like to try something new and exciting, all instructors can help with bash commands and vim shortcuts.
+If you are running linux, you don't actually need docker. You can run and compile everything in your terminal using shell commands and a text editor such as [vim](https://www.vim.org/) or [emacs](https://www.gnu.org/software/emacs/). If you would like to try something new and exciting, instructors can help with bash commands and vim shortcuts.
 
 HOWEVER, Docker allows for the use of the [CS50 IDE Offline](https://manual.cs50.net/ide/offline).  This is the default IDE for this class and instructors will be able to provide the best support to students who use this IDE.
-
-Additionally, it is highly likely that you will use docker in the future. If you would like to install docker for linux, refer to the appropriate section above.
 
 ### 1.2 Documentation
 
@@ -86,7 +84,7 @@ If you have the toolbox version of Docker, launch the "Docker Quickstart" applic
 
 #### Linux
 
-To verify the installation on Linux, launch a terminal window, and enter `docker version`, then `docker run hello-world` to ensure everything installed properly. If you do not know how to open terminal on your version of linux, open whatever searching tool your distro comes with, and type in "terminal". If you do not know how to access your versions' search tool, please refer to your specific distros documentation (or Google it). There are simply too many distros in the wild to contain all relevant documentation here. 
+To verify the installation on Linux, launch a terminal window, and enter `docker version`, then `docker run hello-world` to ensure everything installed properly. If you do not know how to open terminal on your version of linux, open the searching tool your distro comes with, and type in "terminal".
 
 ## 2. Cleaning a Docker Installation (Optional for fresh installs)
 
@@ -107,11 +105,9 @@ $ docker rmi $(docker images -q)
 
 ### 3.1 Installation
 
-In this class we will be using the cs50ide, kindly provided [here](https://manual.cs50.net/ide/offline).
+In this class we will be using the cs50ide, kindly provided [here](https://manual.cs50.net/ide/offline).  Please follow instructions provided on their documentation to install the offline IDE.
 
-Please use the above link to install the IDE to your system.
-
-> If you run the command provided and receive a `docker: Got permission denied ...` error, you **must** prepend `sudo ` to the command. As in: `sudo docker run --privileged -e "IP=127.0.0.1" -e "PORT=8080" --name ide50 -d -p 5050:5050 -p 8080-8082:8080-8082 cs50/ide`
+> If you run the command provided and receive a `docker: Got permission denied ...` error, you **must** prepend `sudo` to the command. As in: `sudo docker run --privileged -e "IP=127.0.0.1" -e "PORT=8080" --name ide50 -d -p 5050:5050 -p 8080-8082:8080-8082 cs50/ide`
 
 ### 3.2 Documentation
 
@@ -144,7 +140,7 @@ For example, yours may look like:
 1. At this point you may notice a banner along the top of your window noting that your current version is out of date, to update, run `update50` in the built-in shell, which should be titled 'workspace/'. You'll then have to restart the docker instance by running `docker restart ide50` in the **original terminal or powershell window** (this is the one one your desktop, not within the browser). Once you've restarted the IDE, refresh your browser to ensure you have all of the changes.
 
 2. After restarting your computer, you will no longer be able to connect to the IDE using your browser. 
-In order to access the IDE again, run the following command: (again, toolbox users will have to run this from the Docker Quickstart Application, Community Edition users can run this directly from terminal / powershell)
+In order to access the IDE again, run the following command: (again, toolbox users will have to run this from the Docker Quickstart Application, Community Edition users can run this directly from terminal/powershell)
 
 ```bash
 $ docker start ide50
@@ -190,7 +186,7 @@ $ ls
 
 You should see, `hello.c`.
 
-Now, it is to compile your program. We will use `gcc`. Simply type this below:
+Now, it is time to compile your program. We will use `gcc`. Simply type this below:
 
 ```bash
 $ gcc hello.c -g -o hello
