@@ -2,6 +2,8 @@
 
 This assignment is focused on your fluency with Bash, it should be completed in the CS50 IDE, and will require that you create and run bash scripts. It will also include some questions on fundamental types in C, and walk you through how to clone this courses Github Repository into your workspace (which will make life much easier throughout the semester).
 
+**You must complete all sections not marked by the (optional) tag.**
+
 ## Bash
 
 Start by opening up CS50 IDE. 
@@ -38,7 +40,7 @@ We're going to build a fake project together, called "Hello universe!".
 
 5) Create another new file: `touch compile.sh`
 
-6) Now, let's write a bare-bones compile script: `echo "gcc *.c -o hello.o" >> compile.sh`. There's quite a bit to unpack in this small statement; however, at the highest level, what we are executing here says 'print the line "gcc *.c -o hello.o" to the file named compile. The `>>` symbol is a *redirection*, that takes the output of whatever command is on it's left, and 'pipes' it to whatever is on it's right. This principle allows long chains of commands to pass information, allowing you to be a much more powerful Bash developer. 
+6) Now, let's write a bare-bones compile script: `echo "gcc *.c -o hello.o" >> compile.sh`. There's quite a bit to unpack in this small statement; however, at the highest level, what we are executing here says 'print the line "gcc *.c -o hello.o" to the file named compile. The `>>` symbol is a *redirection*, that takes the output of whatever command is on it's left, and 'pipes' it to whatever is on it's right. This principle allows long chains of commands to pass information, allowing you to be a much more powerful Bash developer. Also introduced here, is the `*` operator, which is called a "wildcard"; this wildcard tells bash to find all of the files **ending** in ".c", and to replace this *.c with all of those files.
 
 > At this point, feel free to re-run the command above, redirecting the output to different files, such as `compile.txt`, etc. Note the default behavior when a file does not already exist.
 
@@ -62,7 +64,22 @@ We will now clean up our project, since we no longer need the folder.
 
 **Warning** Remove doesn't have a trash can. When you remove something, it not only *unlinks* the data, it also clears any metadata that could be used to restore it. Be sure you want to remove something before you run the `rm` command. Or, use git, which allows you to revert any changes, even removing files.
 
-### 3) Finding Help
+### 3) Chaining Commands
+
+Sometimes you'll want to do multiple things at once from the terminal. Thankfully there are some intelligent ways to do just that.
+
+There are three main ways to chain commands together in bash, `;`, `&&`, and `||`; each with their own properties. In order to explore these properties, try chaining together some commands you already know with these operators (ex: `ls && pwd`) to see what the behavior is.
+
+Try all of the following:
+
+- `ls && pwd`
+- `ls || pwd`
+- `lss && pwd`
+- `lss || pwd`
+
+Note the different results when using the `&&` operator, vs the `||` operator.
+
+### 4) Finding Help
 
 If you ever have trouble with a bash command, the Unix system is there to help! 
 
@@ -70,9 +87,21 @@ Run `man ls` in your terminal window, and examine the output.
 
 Running man is a great way to familiarize yourself with bash commands, note that most options won't be needed for many of the commands.
 
-### 4) Going Further with Github
+### 5) Questions
 
-**This is an optional section**
+For the following scenarios, write a single-line bash command that can complete the specified task. The command must be run from the `workspace/` directory.
+
+- Print all the files in the workspace directory to a file called "files.txt"
+- Create the following folder structure: `csc-211/assignments/a00`, and add the following files: 1.txt, 2.txt, 3.txt, readme.md
+- Print all of the files in `csc-211/assignments/a00` to a file called "a0_files.txt"
+- Create a new directory of your choosing, create a file within that directory, then recursively delete the entire directory without prompting the user.
+- Copy all of the files from `csc-211/assignments/a00` to a folder called `a00` directly in your workspace that fails if the directory already exists.
+- Modify the above command to erase the folder before attempting to copy. This command should **not** fail if the folder does not exist.
+- Modify the above command one final time, so that it only copies files ending in `.md`. (This should only copy one file)
+- Print the manual entry for `ls` and `pwd` to a file called `man_ls.txt`.
+
+
+### (Optional) Going Further with Github
 
 Github is a version-control system capable of saving you countless hours of development time. It allows users to save all of their code to the Github servers, create branches in your code to examine other potential solutions, and much more. Particularly, in this class, it can be very helpful to have the csc211 repository directly inside of the IDE. To do this, navigate back to the `workspace` directory, and run `git clone https://github.com/URI-CSC/csc-211-su18.git`. 
 
@@ -80,9 +109,7 @@ Now that you have the repo in your workspace, there are many new things you can 
 
 To stay in sync with the class as the semester progresses, you can simply run `git pull` to refresh your copy, with the one that the instructors post to. Note that `git pull` only works when inside of a Github repository, **before** you run the command, be sure to `cd` into the `csc-211-su18` directory. 
 
-### 5) Going Further with Vim
-
-**This is an optional section**
+### (Optional) Going Further with Vim
 
 If you enjoy bash, and the terminal in general, you are not alone! There is much more you can do with terminal, in fact, you can turn terminal into a full-blown editor! Vim is a software package that provides a helpful editor anywhere you can use terminal. To learn how to use Vim, you can run `vimtutor` from the CS50 IDE terminal. Completing this tutorial a few times will help you master one of the most powerful terminal-tools out there! Once you've mastered the `vimtutor`, there are many more online resources for learning the advanced features of the editor.
 
