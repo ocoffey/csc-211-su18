@@ -119,12 +119,18 @@ Please complete the table below:
 
 data type | min value | max value 
 ----------|-----------|-----------
-char | | 
-unsigned short | |
-signed short | |
-unsigned int | | 
-signed int | | 
-unsigned long | |
-signed long | |
-unsigned long long | |
-signed long long | |
+`char` | | 
+`unsigned short` | |
+`signed short` | |
+`unsigned int` | | 
+`signed int` | | 
+`unsigned long` | |
+`signed long` | |
+`unsigned long long` | |
+`signed long long` | |
+
+### Questions
+
+- What happens when a signed int becomes larger than it's maximum value? Is the behavior different for unsigned int?
+- How many bytes is a `char`, and how many is a `signed long long`? 
+- What datatype would you select to store a counter variable meant to track attendance in a classroom with a maximum capacity of 100? Why?
