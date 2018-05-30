@@ -11,11 +11,11 @@
   * list all files in `myproject`, including hidden files;
   * return to the parent directory.
   
-1. Provide a sequence of Bash commands that will:
+2. Provide a sequence of Bash commands that will:
   * go to your default home directory;
   * remove the directory `myproject`.
 
-1. Provide a sequence of Bash commands that will:
+3. Provide a sequence of Bash commands that will:
   * create files `a.txt`, `b.txt`, and `c.txt`;
   * write the line `a: 1 2 3 4 5` to `a.txt`;
   * write the line `b: 6 7 8 9 10` to `b.txt`;
