@@ -1,4 +1,6 @@
-# Homework Assignment 01
+# Homework Assignment 01 (due 6/5 12p)
+
+This assignment is to be completed individually.  You are not allowed to share your answers with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
 ## Basic Shell commmands
 
@@ -81,3 +83,9 @@ Using `stdin` and `stdout` redirections, write shell commands that will process 
     * 28 | 13
     * (~73 & (18 << 1)) ^ (64 >> 2)
     * (~28 | (33 >> 2)) & (41 ^ 128)
+
+## Submission and Grading
+
+You will submit a **single PDF file** through [Gradescope](https://gradescope.com).
+
+> You must be reminded that students caught cheating or plagiarizing will receive **no credit**.  Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
