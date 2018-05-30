@@ -40,7 +40,7 @@ Using `stdin` and `stdout` redirections, write shell commands that will process 
 
 6. Using the following commands (`history`, `grep`, `wc`), write a pipeline that will output how many times `ls` appears in your history
 
-7. Using the following commands (`find`, `wc`), write a pipeline that will output how many files endind with `.txt` exist on your entire filesystem.  Also, supress the error messages by redirecting the `stderr` to `/dev/null`
+7. Using the following commands (`find`, `wc`), write a pipeline that will output how many files ending with `.txt` exist on your entire filesystem.  Also, suppress the error messages by redirecting the `stderr` to `/dev/null`
 
 8. Create a bash script file that will output `Hello CSC 211` to the `stdout` followed by a line indicating the number of files in the current directory (not including hidden files)
 
