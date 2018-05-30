@@ -23,7 +23,7 @@
     * concatenate `a.txt`, `b.txt`, and `c.txt` into `all.txt`
   
 4. Create a file named `math.txt` with the following contents:
-```bash
+```text
 1 + 1
 2 * 2
 2 ^ 0
