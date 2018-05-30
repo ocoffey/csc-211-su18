@@ -3,24 +3,24 @@
 ## Basic Shell commmands
 
 1. Provide a sequence of Bash commands that will:
-  - go to your default home directory;
-  - create a directory `test`;
-  - rename `test` to `myproject`;
-  - enter the directory `myproject`;
-  - create a new empty file `main.c`; 
-  - list all files in `myproject`, including hidden files;
-  - return to the parent directory.
+    * go to your default home directory;
+    * create a directory `test`;
+    * rename `test` to `myproject`;
+    * enter the directory `myproject`;
+    * create a new empty file `main.c`; 
+    * list all files in `myproject`, including hidden files;
+    * return to the parent directory.
   
 2. Provide a sequence of Bash commands that will:
     * go to your default home directory;
     * remove the directory `myproject`.
 
 3. Provide a sequence of Bash commands that will:
-  * create files `a.txt`, `b.txt`, and `c.txt`;
-  * write the line `a: 1 2 3 4 5` to `a.txt`;
-  * write the line `b: 6 7 8 9 10` to `b.txt`;
-  * write the line `a: 11 12 13 14 15` to `c.txt`;
-  * concatenate `a.txt`, `b.txt`, and `c.txt` into `all.txt`
+    * create files `a.txt`, `b.txt`, and `c.txt`;
+    * write the line `a: 1 2 3 4 5` to `a.txt`;
+    * write the line `b: 6 7 8 9 10` to `b.txt`;
+    * write the line `a: 11 12 13 14 15` to `c.txt`;
+    * concatenate `a.txt`, `b.txt`, and `c.txt` into `all.txt`
   
 4. Create a file named `math.txt` with the following contents:
 ```bash
@@ -45,10 +45,10 @@ Using `stdin` and `stdout` redirections, write shell commands that will process 
 ## Number Systems
 
 1. Convert the following binary numbers to decimals (show your work):
-  * 1010010010010000
-  * 0001000101010001
-  * 1001010100001100
-  * 0001010101011011
+    * 1010010010010000
+    * 0001000101010001
+    * 1001010100001100
+    * 0001010101011011
 
 2. Convert the binary numbers from the previous exercise to hexadecimals (show your work).
 
@@ -59,26 +59,25 @@ Using `stdin` and `stdout` redirections, write shell commands that will process 
 5. Convert your phone number (including your area code) to hexadecimal representation.  Assume all digits in your phone number compose a single integer in decimal representation. (show your work)
 
 6. Perform the following additions (show your work)
-  * add 10001 to 00111
-  * add 01111 to 10001
-  * add 10111 to 10001
-  * add 11111 to 10001
+    * add 10001 to 00111
+    * add 01111 to 10001
+    * add 10111 to 10001
+    * add 11111 to 10001
 
 7. Perform the following subtractions (show your work)
-  * subtract 0100 from 1000
-  * subtract 1001 from 11000
-  * subtract 10111 from 110000
-  * subtract 00111 from 10000
+    * subtract 0100 from 1000
+    * subtract 1001 from 11000
+    * subtract 10111 from 110000
+    * subtract 00111 from 10000
 
 8. Assuming decimal numbers, indicate the result of the following operations (show your work):
-  * 17 << 1
-  * 28 << 3
-  * 16 >> 1
-  * 44 >> 2
-  * 46 & 78
-  * 255 & 33
-  * 255 | 201
-  * 28 | 13
-  * (~73 & (18 << 1)) ^ (64 >> 2)
-  * (~28 | (33 >> 2)) & (41 ^ 128)
-  * 17 << 1
+    * 17 << 1
+    * 28 << 3
+    * 16 >> 1
+    * 44 >> 2
+    * 46 & 78
+    * 255 & 33
+    * 255 | 201
+    * 28 | 13
+    * (~73 & (18 << 1)) ^ (64 >> 2)
+    * (~28 | (33 >> 2)) & (41 ^ 128)
