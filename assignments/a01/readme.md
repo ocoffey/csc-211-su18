@@ -12,8 +12,8 @@
   - return to the parent directory.
   
 2. Provide a sequence of Bash commands that will:
-  * go to your default home directory;
-  * remove the directory `myproject`.
+    * go to your default home directory;
+    * remove the directory `myproject`.
 
 3. Provide a sequence of Bash commands that will:
   * create files `a.txt`, `b.txt`, and `c.txt`;
