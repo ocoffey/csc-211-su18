@@ -3,13 +3,13 @@
 ## Basic Shell commmands
 
 1. Provide a sequence of Bash commands that will:
-  * go to your default home directory;
-  * create a directory `test`;
-  * rename `test` to `myproject`;
-  * enter the directory `myproject`;
-  * create a new empty file `main.c`; 
-  * list all files in `myproject`, including hidden files;
-  * return to the parent directory.
+  - go to your default home directory;
+  - create a directory `test`;
+  - rename `test` to `myproject`;
+  - enter the directory `myproject`;
+  - create a new empty file `main.c`; 
+  - list all files in `myproject`, including hidden files;
+  - return to the parent directory.
   
 2. Provide a sequence of Bash commands that will:
   * go to your default home directory;
@@ -22,7 +22,7 @@
   * write the line `a: 11 12 13 14 15` to `c.txt`;
   * concatenate `a.txt`, `b.txt`, and `c.txt` into `all.txt`
   
-1. Create a file named `math.txt` with the following contents:
+4. Create a file named `math.txt` with the following contents:
 ```bash
 1 + 1
 2 * 2
@@ -34,13 +34,13 @@
 ```
 Using `stdin` and `stdout` redirections, write shell commands that will process `math.txt` with the `bc` utility and save the output to `results.txt`
 
-1. Using the following commands (`ps`, `wc`), write a pipeline that will output how many processes are currently running
+5. Using the following commands (`ps`, `wc`), write a pipeline that will output how many processes are currently running
 
-1. Using the following commands (`history`, `grep`, `wc`), write a pipeline that will output how many times `ls` appears in your history
+6. Using the following commands (`history`, `grep`, `wc`), write a pipeline that will output how many times `ls` appears in your history
 
-1. Using the following commands (`find`, `wc`), write a pipeline that will output how many files endind with `.txt` exist on your entire filesystem.  Also, supress the error messages by redirecting the `stderr` to `/dev/null`
+7. Using the following commands (`find`, `wc`), write a pipeline that will output how many files endind with `.txt` exist on your entire filesystem.  Also, supress the error messages by redirecting the `stderr` to `/dev/null`
 
-1. Create a bash script file that will output `Hello CSC 211` to the `stdout` followed by a line indicating the number of files in the current directory (not including hidden files)
+8. Create a bash script file that will output `Hello CSC 211` to the `stdout` followed by a line indicating the number of files in the current directory (not including hidden files)
 
 ## Number Systems
 
@@ -50,27 +50,27 @@ Using `stdin` and `stdout` redirections, write shell commands that will process 
   * 1001010100001100
   * 0001010101011011
 
-1. Convert the binary numbers from the previous exercise to hexadecimals (show your work).
+2. Convert the binary numbers from the previous exercise to hexadecimals (show your work).
 
-1. Convert the binary numbers from the previous exercise to octals (show your work).
+3. Convert the binary numbers from the previous exercise to octals (show your work).
 
-1. Convert your Student ID number to hexadecimal representation.  Hint: convert to binary, and then, to hexadecimal. (show your work)
+4. Convert your Student ID number to hexadecimal representation.  Hint: convert to binary, and then, to hexadecimal. (show your work)
 
-1. Convert your phone number (including your area code) to hexadecimal representation.  Assume all digits in your phone number compose a single integer in decimal representation. (show your work)
+5. Convert your phone number (including your area code) to hexadecimal representation.  Assume all digits in your phone number compose a single integer in decimal representation. (show your work)
 
-1. Perform the following additions (show your work)
+6. Perform the following additions (show your work)
   * add 10001 to 00111
   * add 01111 to 10001
   * add 10111 to 10001
   * add 11111 to 10001
 
-1. Perform the following subtractions (show your work)
+7. Perform the following subtractions (show your work)
   * subtract 0100 from 1000
   * subtract 1001 from 11000
   * subtract 10111 from 110000
   * subtract 00111 from 10000
 
-1. Assuming decimal numbers, indicate the result of the following operations (show your work):
+8. Assuming decimal numbers, indicate the result of the following operations (show your work):
   * 17 << 1
   * 28 << 3
   * 16 >> 1
