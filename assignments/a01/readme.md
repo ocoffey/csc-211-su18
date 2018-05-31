@@ -2,7 +2,7 @@
 
 This assignment is to be completed individually.  You are not allowed to share your answers with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
-## Basic Shell commmands
+## Basic Shell Commands
 
 1. Provide a sequence of Bash commands that will:
     * go to your default home directory;
