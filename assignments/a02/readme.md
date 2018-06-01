@@ -2,7 +2,7 @@
 
 This assignment is to be completed individually.  You are not allowed to share your answers with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
-## Number Representation
+## Number Representation (show all related work)
 
 1. In computer programming, the range of a datatype is constrained by how many bits that datatype uses. Provide the formula to calculate range given `n` bits.
 
@@ -34,8 +34,17 @@ if (x + y == 0.2) {
 }
 ```
 
+7. Convert the following `float`s into decimal.
+    * 1 10000011 10110110000000000000000
+    * 0 00110010 00101100001000000000001
+    * 0 11111111 00000000000000000000000
+    * 1 11111111 00000000000000000000000
+    * 0 00000000 00000000000000000000000
+    * 1 00000000 00000000000000000000000
+    * 0 01010101 01010101000000000000000
 
-## Data Types
+
+## Data Types (show all related work)
 
 1. Complete the following table:
 
