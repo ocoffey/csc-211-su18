@@ -71,9 +71,8 @@ data type            | min value | max value
 
 6. Complete the following table:
 
-data type | size | number of bits for exponent | number of bits for fraction
+data type | size | number of bits for exponent | number of bits for fraction (mantissa)
 ----------|------|-----------------------------|-------------------------------
 `float`     |      |   |
 `double`    |      |   |
-`long double` (refer to the x86 extended precision format) |    |   |
 
