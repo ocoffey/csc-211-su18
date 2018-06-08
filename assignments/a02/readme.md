@@ -77,7 +77,8 @@ data type            | min value | max value | number of bytes
    * reverse the byte order (e.g. 0x000CAFFE should produce 0xFEAF0C00)
    * rotate `var` four bits to the right (e.g. 0x000CAFFE should produce 0xE000CAFF)
    
-4. Using precedence rules, evaluate the following statements, and determine the value of the variables:
+4. Using precedence rules, evaluate the following statements, and determine the value of all the variables after running each line:
    * `x = 0xFF33; m = 0xFF00; c = x & m == 0;`
    * `x = 10; y = z = 2; z = y = x++ + ++y * 2;`
    * `x = 10; y = 4; z = 1; y >>= x & 0x2 && z;`
+   * `int a = 1; int b = 1; int c = a || --b; int d = a-- && --b;`
