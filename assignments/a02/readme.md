@@ -2,28 +2,28 @@
 
 This assignment is to be completed individually.  You are not allowed to share your answers with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
-## Number Representation (show all related work)
+## Number Representation (Signed Integers and Floating Point Numbers)
 
-1. In computer programming, the range of a datatype is constrained by how many bits that datatype uses. Provide the formula to calculate range given `n` bits.
+1. For each of the following integers, indicate their bit representation using 8 bits and two's complement.  If overflow happens, show the resulting bits and write *overflow* respectively:
+   * -23
+   * 45
+   * 326
+   * -129
+   * 0
+   * 127
+   * 1
+   * -1
 
-2. Given 4 bits, what is the largest unsigned number you can represent?
+2. Convert the following `float`s into their corresponding floating point numbers:
+    * 11000001110110110000000000000000
+    * 00011001000101100001000000000001
+    * 01111111100000000000000000000000
+    * 11111111100000000000000000000000
+    * 00000000000000000000000000000000
+    * 10000000000000000000000000000000
+    * 00101010101010101000000000000000
 
-3. If you added 1 to the number you found in the previous question, what would the result be?
-
-4. For the following numbers, convert them into their binary representations, then use Two's Complement to negate them; your answer should list both the positive, and negative values.
-    * 1
-    * 4
-    * 7
-    * 10
-    * 14
-
-5. Convert the following problems to binary, then use *addition* to solve. (Convert subtraction into addition of the negative)
-    * 5 - 5
-    * 10 + 10
-    * 13 - 4
-    * 8 - 3
-
-6. Determine the output of the following:
+3. Determine the output of the following (explain what happened):
 ```c
 float x = 0.1;
 float y = 0.1;
@@ -34,45 +34,50 @@ if (x + y == 0.2) {
 }
 ```
 
-7. Convert the following `float`s into decimal.
-    * 1 10000011 10110110000000000000000
-    * 0 00110010 00101100001000000000001
-    * 0 11111111 00000000000000000000000
-    * 1 11111111 00000000000000000000000
-    * 0 00000000 00000000000000000000000
-    * 1 00000000 00000000000000000000000
-    * 0 01010101 01010101000000000000000
-
-
-## Data Types (show all related work)
+## Data Types
 
 1. Complete the following table:
 
-data type            | min value | max value 	
----------------------|-----------|-----------	
-`char`               |           |
-`unsigned short`     |           |
-`signed short`       |           |
-`unsigned int`       |           |
-`signed int`         |           |
-`unsigned long`      |           |
-`signed long`        |           |
-`unsigned long long` |           |
-`signed long long`   |           |
+data type            | min value | max value | number of bytes
+---------------------|-----------|----------------------------
+`unsigned char`      |           |           |
+`signed char`        |           |           |
+`unsigned short`     |           |           |
+`signed short`       |           |           |
+`unsigned int`       |           |           |
+`signed int`         |           |           |
+`unsigned long`      |           |           |
+`signed long`        |           |           |
+`unsigned long long` |           |           |
+`signed long long`   |           |           |
+`float`              |           |           |
+`double`             |           |           |
+`long double`.       |           |           |
 
-2. Given an unsigned 2-byte variable `x`, with a current value of 65,000; what will the result of `x * 2` be? 
+2. Given an unsigned short `x`, with a current value of 65,000; what will the result of `x * 2` be? 
 
 3. What is the result of `'\x63' + '\x40'` in C?
 
-4. Without using the `"` character, declare a variable s containing the string "World".
+## Expressions
 
-5. What is the value of the following statement: 
-`(1 == 1) - ((1 < 2) && 10) + (0 || (0 == 0))`
+1. What is the value of the following statements:
+   * `(1 == 1) - ((1 < 2) && 10) + (0 || (0 == 0))`
+   * `(34 >> 2) + 2L - 0xAB`
+   * `2 * 15 % 5 * 4 + (10 - 3) / (3 + 2)`
+   * `(! (1 && 1)) && (0 | 7)`
 
-6. Complete the following table:
+2. Write logical expressions that can determine whether a given variable `a` of type `char` is:
+   * an uppercase letter
+   * a lowercase letter
+   * a digit (from 0 to 9)
+   * a whitespace (can be either a blank space or tab or a newline character)
 
-data type | size | number of bits for exponent | number of bits for fraction (mantissa)
-----------|------|-----------------------------|-------------------------------
-`float`     |      |   |
-`double`    |      |   |
-
+3. Consider a variable `unsigned int var`; write expressions using bitwise operators to:
+   * test whether at least three of the most significant bits are on
+   * reverse the byte order (e.g. 0x000CAFFE should produce 0xFEAF0C00)
+   * rotate `var` four bits to the right (e.g. 0x000CAFFE should produce 0xE000CAFF)
+   
+4. Using precedence rules, evaluate the following statements, and determine the value of the variables:
+   * `x = 0xFF33; m = 0xFF00; c = x & m == 0;`
+   * `x = 10; y = 2 = z; z = y = x++ + ++y * 2;`
+   * `x = 10; y = 4; z = 1; y >>= x & 0x2 && z;`
