@@ -37,4 +37,6 @@ If the user were to enter 2 for example, the program should output 3. *Remember 
 
 14. Basic Calculator. This program will act as a basic calculator, by working in three steps. First prompt the user for `a`, then the operator of their choosing, then `b`. Once you have these three elements, output the result of the operation to the command line in the form `"<a> <operator> <b> = <c>"` where `c` is the resulting value.
 
-15. Clean output. Prompt the user for a string, then, print each lowercase English letter to the command line. For example, given the string "1234hello(()!u$$s%er)" the output should be "hellouser".
+15. Clean output. Prompt the user for a string, then print each lowercase English letter to the command line. For example, given the string "1234hello(()!u$$s%er)" the output should be "hellouser".
+
+16. Adding ASCII. Prompt the user for a string, then compute the sum of each character in the string, if the character is a vowel. Print this sum to the command line.
