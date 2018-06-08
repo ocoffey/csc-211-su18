@@ -39,7 +39,7 @@ if (x + y == 0.2) {
 1. Complete the following table:
 
 data type            | min value | max value | number of bytes
----------------------|-----------|----------------------------
+---------------------|-----------|-----------|----------------
 `unsigned char`      |           |           |
 `signed char`        |           |           |
 `unsigned short`     |           |           |
