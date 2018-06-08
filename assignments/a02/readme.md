@@ -2,6 +2,8 @@
 
 This assignment is to be completed individually.  You are not allowed to share your answers with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
+> Do not use a computer for solving the questions below
+
 ## Number Representation (Signed Integers and Floating Point Numbers)
 
 1. For each of the following integers, indicate their bit representation using 8 bits and two's complement.  If overflow happens, show the resulting bits and write *overflow* respectively:
@@ -82,3 +84,10 @@ data type            | min value | max value | number of bytes
    * `x = 10; y = z = 2; z = y = x++ + ++y * 2;`
    * `x = 10; y = 4; z = 1; y >>= x & 0x2 && z;`
    * `int a = 1; int b = 1; int c = a || --b; int d = a-- && --b;`
+   
+## Submission and Grading
+
+You will submit a **single PDF file** through [Gradescope](https://gradescope.com).
+
+> You must be reminded that students caught cheating or plagiarizing will receive **no credit**.  Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
+
