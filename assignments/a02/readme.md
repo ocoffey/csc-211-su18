@@ -79,5 +79,5 @@ data type            | min value | max value | number of bytes
    
 4. Using precedence rules, evaluate the following statements, and determine the value of the variables:
    * `x = 0xFF33; m = 0xFF00; c = x & m == 0;`
-   * `x = 10; y = 2 = z; z = y = x++ + ++y * 2;`
+   * `x = 10; y = z = 2; z = y = x++ + ++y * 2;`
    * `x = 10; y = 4; z = 1; y >>= x & 0x2 && z;`
