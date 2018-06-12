@@ -75,7 +75,7 @@ data type            | min value | max value | number of bytes
    * a whitespace (can be either a blank space or tab or a newline character)
 
 3. Consider a variable `unsigned int var`; write expressions using bitwise operators to:
-   * test whether at least three of the most significant bits are on
+   * test whether at least three of the four most significant bits are on
    * reverse the byte order (e.g. 0x000CAFFE should produce 0xFEAF0C00)
    * rotate `var` four bits to the right (e.g. 0x000CAFFE should produce 0xE000CAFF)
    
