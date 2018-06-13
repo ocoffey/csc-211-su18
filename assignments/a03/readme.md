@@ -29,5 +29,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 
 1. Adding ASCII.  Write a program that reads a sequence of characters from the standard input, then computes the sum of each vowel the input sequence.  Print this sum to the command line.
 
-For each of the following problems, create a file called `main_<num>.c` where num is the question number itself, ensure *all* of your code resides within the `main()` function within that file. All programs **must** compile and execute without warnings, and ensure that the user prompt appears on it's own line upon termination.
+### Submission and Grading
+You will submit a *zip file* named `pa3.zip` through Gradescope.  Your zip archive must contain your source files **only**.  For each of the problems, create a file called `main_<num>.c` where num is the question number itself with no leading zeros.  Ensure *all* of your code resides within the `main()` function within that file.  All programs **must** compile and execute without warnings.  Your programs will be automatically graded.  For each of the questions you either pass the test cases (full points) or not (zero points).
 
+> You must be reminded that students caught cheating or plagiarizing will receive `no credit`.  Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
