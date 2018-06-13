@@ -10,30 +10,24 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. Century from Year.  Given a year, this program should output the century it is in.  The first century spans from year 1 up to, and including, year 100.  The second spans years 101 through 200.  Do not use strings or arrays.  The year should be stored as an integer variable.
 
-1. R2. The number S is called the mean of two numbers, R1 and R2, where S = (R1 + R2)/2. This program should prompt the user to provide R1 and S, then it should print R2 to the command line.
+1. R2.  The number S is called the mean of two floating point numbers, R1 and R2, where S = (R1 + R2) / 2.  This program should prompt the user to provide R1 and S, then it should print R2 to the command line.
 
-7. Countdown. This program should ask for a number from the user, then print a countdown, from that number, to zero. Each number should be printed on a new line.
+1. Countdown.  This program should ask for a number from the user, then print a countdown, from that number, to zero.  Each number should be printed on a new line.
 
-8. Countdown 2.0. Copy your countdown program, and modify it so that up to 10 numbers are printed on the same line. 
-If given the number 10 as input, this program should output 2 lines, the first containing the numbers 10 through 1 separated by spaces, the second containing the number 0. Ensure that the 0 character in this example is on it's own line, and that the prompt resumes on the line following.
+1. Countdown 2.0.  Copy your countdown program, and modify it so that up to 10 numbers are printed on the same line. 
+If given the number 10 as input, this program should output 2 lines, the first containing the numbers 10 through 1 separated by spaces, the second containing the number 0.
 
-9. Multiples of 3 and 5. This program should prompt the user for a number, it should then compute the sum of all the multiples of 3 or 5 below the given number. 
-If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 4, 6 and 9. The sum of these multiples is 23. If the user provided the number 10, the output would be 23.
+1. Multiples of 3 and 5.  This program should prompt the user for a number, it should then compute the sum of all the multiples of 3 or 5 below the given number.  If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 4, 6 and 9.  The sum of these multiples is 23.  If the user provided the number 10, the output would be 23.
 
-10. Nth Fibonacci. The Fibonacci sequence begins as follows: 1, 2, 3, 5, 8, 13, ... Your program should take a number as input, and then return the Fibonacci term corresponding to that number. 
-If the user were to enter 2 for example, the program should output 3. *Remember that the sequence starts at index 0*
+1. Nth Fibonacci.  The Fibonacci sequence is defined as the series: 1, 1, 2, 3, 5, 8, 13, ... Your program should take a number N as input, and then return the Nth Fibonacci number.  If the user were to enter 4 for example, the program should output 3.
 
-11. Quadrant Selection. In mathematics, graphs can be segmented into four quadrants, depending on whether `x` and `y` are positive or negative. For example, given (1, 1) the program should output Quadrant 1. This program should prompt the user for an `x`, and then a `y` coordinate. Once the program has both coordinates, it should output what quadrant the point falls in.
+1. Quadrant Selection.  In mathematics, 2-dimensional cartesian systems can be segmented into four quadrants, depending on whether `x` and `y` are positive or negative. For example, given (1, 1) the program should output Quadrant 1.  Write a program that asks the user an `x`, and then a `y` coordinate, and then outputs what quadrant the point falls in.
 
-12. Palindrome. In English a palindrome is a word that is the same in reverse, as in "aabaa", which backwards is still "aabaa". After prompting the user for a string to check, this program should output `"<word> <is|is not> a palindrome"` where `word` is the user provided word, and `is` or `is not` gets printed depending on whether the word is a palindrome. 
+1. Palindrome.  In English a palindrome is a word that is the same in reverse, as in "aabaa", which backwards is still "aabaa".  After prompting the user for a number to check, this program should output `"<number> <is|is not> a palindrome"` where `number` is the user provided positive integer, and `is` or `is not` gets printed depending on whether the number is a palindrome.
 
-13. Common Character Count. After prompting the user for two strings, output the number of characters in common the strings have. For `string1 = "aabcc"` and `string2 = "adcaa"` the output should be `3`, because they share 2 'a' characters, and 1 'c' character.
+1. Basic Calculator.  This program will act as a basic calculator, by working in three steps.  First prompt the user for `a`, then the operator of their choosing, then `b`.  Once you have these three elements, output the result of the operation to the command line in the form `"<a> <operator> <b> = <c>"` where `c` is the resulting value.
 
-14. Basic Calculator. This program will act as a basic calculator, by working in three steps. First prompt the user for `a`, then the operator of their choosing, then `b`. Once you have these three elements, output the result of the operation to the command line in the form `"<a> <operator> <b> = <c>"` where `c` is the resulting value.
-
-15. Clean output. Prompt the user for a string, then print each lowercase English letter to the command line. For example, given the string "1234hello(()!u$$s%er)" the output should be "hellouser".
-
-16. Adding ASCII. Prompt the user for a string, then compute the sum of each character in the string, if the character is a vowel. Print this sum to the command line.
+1. Adding ASCII.  Write a program that reads a sequence of characters from the standard input, then computes the sum of each vowel the input sequence.  Print this sum to the command line.
 
 For each of the following problems, create a file called `main_<num>.c` where num is the question number itself, ensure *all* of your code resides within the `main()` function within that file. All programs **must** compile and execute without warnings, and ensure that the user prompt appears on it's own line upon termination.
 
