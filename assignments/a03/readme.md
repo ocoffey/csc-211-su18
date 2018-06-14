@@ -17,7 +17,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 1. Countdown 2.0.  Copy your countdown program, and modify it so that up to 10 numbers are printed on the same line. 
 If given the number 10 as input, this program should output 2 lines, the first containing the numbers 10 through 1 separated by spaces, the second containing the number 0.
 
-1. Multiples of 3 and 5.  This program should prompt the user for a number, it should then compute the sum of all the multiples of 3 or 5 below the given number.  If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 4, 6 and 9.  The sum of these multiples is 23.  If the user provided the number 10, the output would be 23.
+1. Multiples of 3 and 5.  This program should prompt the user for a number, it should then compute the sum of all the multiples of 3 or 5 below the given number.  If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.  The sum of these multiples is 23.  If the user provided the number 10, the output would be 23.
 
 1. Nth Fibonacci.  The Fibonacci sequence is defined as the series: 1, 1, 2, 3, 5, 8, 13, ... Your program should take a number N as input, and then return the Nth Fibonacci number.  If the user were to enter 4 for example, the program should output 3.
 
