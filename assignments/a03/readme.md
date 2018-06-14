@@ -1,5 +1,7 @@
 # Homework Assignment 03 (due 6/20 12p)
 
+This assignment is about operators, expressions, data types, and control statements.  **Arrays or functions are not allowed**.
+
 This assignment is to be completed individually.  You are not allowed to share your code with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
 1. Privileges.  This program should prompt the user for an age, and then output one of the following depending on the age given: "Too young!" for anyone under 16; "Can drive" for those between 16 and 18; "Can join the military" for those between 18 and 21; and finally "Can have a beer" for ages greater than or equal to 21. 
