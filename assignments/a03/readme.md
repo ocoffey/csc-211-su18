@@ -33,7 +33,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 
 1. Exp.  Write a program that reads an integer `n` and prints the value of `e`.  The value of `e` (Euler's number) is equal to the series: 1/0! + 1/1! + 1/2! + 1/3! + ... + 1/n!.   Your result should be displayed using 10 decimal places (pad zeros to the right if necessary).
 
-1. Nested Loops.  Write a program that reads an integer `n` and generates the following output (example shows `n=5`):
+1. Nested Loops 1.  Write a program that reads an integer `n` and generates the following output (example below shows `n=5`):
 ```
 ++++1
 +++22
@@ -42,9 +42,22 @@ If given the number 10 as input, this program should output 2 lines, the first c
 55555
 ```
 
-1. TBA
+1. Nested Loops 2.  Write a program that reads an integer `n` and generates the following output (example below shows `n=5`):
+```
+++++1
++++2
+++3
++4
+5
+```
 
-1. TBA
+1. Triangle.  Write a program that reads and integer `n`, which denotes the number of lines, and generates the following output (example below shows `n=4`):
+```
+1
+2 3
+4 5 6
+7 8 9 10
+```
 
 ### Submission and Grading
 You will submit a *zip file* named `pa3.zip` through Gradescope.  Your zip archive must contain your source files **only**.  For each of the problems, create a file called `main_<num>.c` where num is the question number itself with no leading zeros.  Ensure *all* of your code resides within the `main()` function within that file.  All programs **must** compile and execute without warnings.  Your programs will be automatically graded.  For each of the questions you either pass the test cases (full points) or not (zero points).
