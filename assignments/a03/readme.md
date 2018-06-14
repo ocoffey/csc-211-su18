@@ -51,12 +51,20 @@ If given the number 10 as input, this program should output 2 lines, the first c
 5
 ```
 
-18. Triangle.  Write a program that reads and integer `n`, which denotes the number of lines, and generates the following output (example below shows `n=4`):
+18. Triangle.  Write a program that reads an integer `n`, which denotes the number of lines, and generates the following output (example below shows `n=4`):
 ```
 1
 2 3
 4 5 6
 7 8 9 10
+```
+
+19. Pyramid.  Write a program that reads an uppercase letter `ch`, and displays the following output (example below shows `ch=D`)
+```
+      A
+    A B A 
+  A B C B A
+A B C D C B A 
 ```
 
 ### Submission and Grading
