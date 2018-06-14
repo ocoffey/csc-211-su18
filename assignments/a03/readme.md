@@ -33,7 +33,14 @@ If given the number 10 as input, this program should output 2 lines, the first c
 
 1. Exp.  Write a program that reads an integer `n` and prints the value of `e`.  The value of `e` (Euler's number) is equal to the series: 1/0! + 1/1! + 1/2! + 1/3! + ... + 1/n!.   Your result should be displayed using 10 decimal places (pad zeros to the right if necessary).
 
-1. TBA
+1. Nested Loops.  Write a program that reads an integer `n` and generates the following output (example shows `n=5`):
+```
+++++1
++++22
+++333
++4444
+55555
+```
 
 1. TBA
 
