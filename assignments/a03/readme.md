@@ -31,7 +31,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 
 1. Interval.  Write a program that reads a floating point number and prints `yes` if the number is in the interval [-1,1), and `no` otherwise.
 
-1. Exp.  Write a program that reads an integer `n` and prints the value of `e`.  The value of `e` (Euler's number) is equal to the series: 1/0! + 1/1! + 1/2! + 1/3! + ... + 1/n!.   Your result should be displayed using 10 decimal places (pad zeros to the right if necessary)
+1. Exp.  Write a program that reads an integer `n` and prints the value of `e`.  The value of `e` (Euler's number) is equal to the series: 1/0! + 1/1! + 1/2! + 1/3! + ... + 1/n!.   Your result should be displayed using 10 decimal places (pad zeros to the right if necessary).
 
 1. TBA
 
