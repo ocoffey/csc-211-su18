@@ -67,6 +67,8 @@ If given the number 10 as input, this program should output 2 lines, the first c
 A B C D C B A 
 ```
 
+20. Sort.  Write a program that reads three integer values from the standard input and outputs the same values in increasing order (separated by whitespaces).
+
 ### Submission and Grading
 You will submit a *zip file* named `pa3.zip` through Gradescope.  Your zip archive must contain your source files **only**.  For each of the problems, create a file called `main_<num>.c` where num is the question number itself with no leading zeros.  Ensure *all* of your code resides within the `main()` function within that file.  All programs **must** compile and execute without warnings.  Your programs will be automatically graded.  For each of the questions you either pass the test cases (full points) or not (zero points).
 
