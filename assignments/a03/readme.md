@@ -42,7 +42,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 55555
 ```
 
-1. Nested Loops 2.  Write a program that reads an integer `n` and generates the following output (example below shows `n=5`):
+17. Nested Loops 2.  Write a program that reads an integer `n` and generates the following output (example below shows `n=5`):
 ```
 ++++1
 +++2
@@ -51,7 +51,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 5
 ```
 
-1. Triangle.  Write a program that reads and integer `n`, which denotes the number of lines, and generates the following output (example below shows `n=4`):
+18. Triangle.  Write a program that reads and integer `n`, which denotes the number of lines, and generates the following output (example below shows `n=4`):
 ```
 1
 2 3
