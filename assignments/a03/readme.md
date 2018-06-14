@@ -59,7 +59,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 7 8 9 10
 ```
 
-19. Pyramid.  Write a program that reads an uppercase letter `ch`, and displays the following output (example below shows `ch=D`)
+19. Pyramid.  Write a program that reads an uppercase letter `ch`, and displays the following output (example below shows `ch='D'`)
 ```
       A
     A B A 
