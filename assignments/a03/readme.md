@@ -4,7 +4,7 @@ This assignment is about operators, expressions, data types, and control stateme
 
 This assignment is to be completed individually.  You are not allowed to share your code with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.
 
-1. Privileges.  This program should prompt the user for an age, and then output one of the following depending on the age given: "Too young!" for anyone under 16; "Can drive" for those between 16 and 18; "Can join the military" for those between 18 and 21; and finally "Can have a beer" for ages greater than or equal to 21. 
+1. Privileges.  This program should prompt the user for an age, and then output one of the following depending on the age given: "Too young!" for anyone under 16; "Can drive" for those in the interval [16, 18); "Can join the military" for those in [18,21); and finally "Can have a beer" for ages greater than or equal to 21. 
 
 1. Addition.  Prompt the user for two numbers, then output the following string: `"<a> + <b> = <c>"` where `a` is the first number given, `b` is the second, and `c` is the sum.
 
