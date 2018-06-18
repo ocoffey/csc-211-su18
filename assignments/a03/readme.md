@@ -12,7 +12,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. Century from Year.  Given a year, this program should output the century it is in.  The first century spans from year 1 up to, and including, year 100.  The second spans years 101 through 200.  Do not use strings or arrays.  The year should be stored as an integer variable.
 
-1. R2.  The number S is called the mean of two floating point numbers, R1 and R2, where S = (R1 + R2) / 2.  This program should prompt the user to provide R1 and S, then it should print R2 to the command line.
+1. R2.  The number S is called the mean of two floating point numbers, R1 and R2, where S = (R1 + R2) / 2.  This program should prompt the user to provide R1 and S, then it should print R2 to the command line.  Your result should be displayed using 4 decimal places (pad zeros to the right if necessary).
 
 1. Countdown.  This program should ask for a number from the user, then print a countdown, from that number, to zero.  Each number should be printed on a new line.
 
