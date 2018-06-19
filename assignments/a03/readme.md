@@ -29,7 +29,7 @@ If given the number 10 as input, this program should output 2 lines, the first c
 
 1. Basic Calculator.  This program will act as a basic calculator, by working in three steps.  First prompt the user for `a`, then the operator of their choosing, then `b`.  Once you have these three elements, output the result of the operation to the command line in the form `"<a> <operator> <b> = <c>"` where `c` is the resulting value.
 
-1. Adding ASCII.  Write a program that reads a sequence of characters from the standard input, then computes the sum of each vowel the input sequence.  Print this sum to the command line.
+1. Adding ASCII.  Write a program that reads a sequence of characters from the standard input, then computes the sum of each vowel in the input sequence.  Print this sum to the command line.
 
 1. Interval.  Write a program that reads a floating point number and prints `yes` if the number is in the interval [-1,1), and `no` otherwise.
 
