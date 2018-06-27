@@ -1,6 +1,6 @@
 # Homework Assignment 04 (due 7/3 12p)
 
-This assignment is to be completed individually.  You are not allowed to share your code with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or post those questions on [Piazza](https://piazza.com) using the appropriate folder tag.  For each question of the questions below, the format is as follows:
+This assignment is to be completed individually.  You are not allowed to share your code with other students.  The assignment is worth a total of 100 points.  If you have any questions, visit us during office hours and/or create a post on [Piazza](https://piazza.com) using the appropriate folder tag.  For each of the questions below, the format is as follows:
 
 > Number. Function Prototype. Description of what the function should do.
 
