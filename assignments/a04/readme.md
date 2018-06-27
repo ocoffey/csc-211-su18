@@ -14,7 +14,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `char most_frequent(char *s)`.  Write a function that takes a string `s`, and returns the most frequent character in `s`.  For example, in the string `"aaabbc"` the most frequent character is `'a'` (break ties by chosing the leftmost character).
 
-1. `void selective_filter(char *s1, char *s2)`.  Write a function that takes two strings `s1` and `s2`, and prints the first string, where all characters in the second string have been removed.  For example: given `"hello world"` and `"d owl"`, the output should be `"herld"`, as characters `'d', ' ', 'o', 'w'`, and `'l'` have been removed.
+1. `void selective_filter(char *s1, char *s2)`.  Write a function that takes two strings `s1` and `s2`, and prints the first string, where all characters in the second string have been removed.  For example: given `"hello world"` and `"d owl"`, the output should be `"herd"`, as characters `'d', ' ', 'o', 'w'`, and `'l'` have been removed.
 
 1. `void palindrome_rearranging(char *s)`.  Write a function that takes a string `s`, then prints whether or not that string can be *rearranged* to form a palindrome.  For example "aabb" can be rearranged, thus it should print `"True"`. `"abca"` cannot be rearranged into a palindrome, thus it should print `"False"`.
 
