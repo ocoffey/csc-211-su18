@@ -6,7 +6,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `void palindrome(char *s)`. Create a function that takes a parameter `s` and prints whether or not `s` is a palindrome.  The output should be `s <is|is not> a palindrome` where `<is|is not>` is determined by whether or not the string is a palindrome.  For example, if `s = "abcba"` then the output would be `abcba is a palindrome`.
 
-1. `void array_builder(int *A, int len)`.  Create a function that takes an array of integers `A` and an integer `len>0` as parameters.  The function should then print all of the numbers in the array formatted as follows: `[A1, A2, ..., Alen]`.  Note the brackets, and the commas are all necessary.  If `n = 4`, and the array contains the numbers `11 12 30 4`, the output would be: `[11, 12, 30, 4]`.
+1. `void array_builder(int *A, int len)`.  Create a function that takes an array of integers `A` and an integer `len>0` as parameters.  The function should then print all of the numbers in the array formatted as follows: `[A1, A2, ..., Alen]`.  Note the brackets, and the commas are all necessary.  If `len = 4`, and the array contains the numbers `11 12 30 4`, the output would be: `[11, 12, 30, 4]`.
 
 1. `void safe_string(char *s)`.  Create a function that takes a string `s`, then prints that string with all invalid characters removed.  For this problem, all characters are invalid **except** lowercase English letters.  For example, if `s = "h3l10 W0r1D"`, the output would be `hlr`.
 
