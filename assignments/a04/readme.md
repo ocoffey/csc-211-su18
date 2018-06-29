@@ -18,7 +18,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `void palindrome_rearranging(char *s)`.  Write a function that takes a string `s`, then prints whether or not that string can be *rearranged* to form a palindrome.  For example "aabb" can be rearranged, thus it should print `"True"`. `"abca"` cannot be rearranged into a palindrome, thus it should print `"False"`.
 
-1. `unsigned long any2dec(char *num, unsigned int b)`.  Write a function that returns the decimal integer number that corresponds to the number $$num$$ (assume upper-case letters) in a given base `b, 1 < b <= 16`.
+1. `unsigned long any2dec(char *num, unsigned int b)`.  Write a function that returns the decimal integer number that corresponds to the number `num` (assume upper-case letters) in a given base `b, 1 < b <= 16`.
 
 1. `void hex2rgb(char *hex)`.  Write a function that takes a string `hex`.  The parameter `hex` contains a hex color code.  Your function should convert the hex color code into a RGB value.  For example, if the input is `"#04F3A8"`, your function should print `"rgb(4,243,168)"` to the standard output.
 
