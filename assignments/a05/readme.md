@@ -4,23 +4,23 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 > Each of the following functions **must implement a recursive solution**.
 
-1. `int palindrome(const char *S, unsigned int n)`.  Write a function that will return 1 if an input string `S` of length `n >= 0` is a palindrome and 0 otherwise.  The empty string is a palindrome and a string constituted only by a single character is also a palindrome.
-
 1. `long int power(int b, int e)`.  Write a function that takes integers `b` and `e >= 0` as parameters and returns the value of `b^e`.
-
-1. `int v_sorted(const char *A)`.  Write a function that returns 1 if the vowels in the input string `A` appear in non-decreasing order and 0 otherwise.  You can assume this function is not case sensitive.  If the string does not contain any vowels, return 1.
 
 1. `unsigned long int prefix_sum(unsigned int n)`.  Write a recursive function that, given a positive integer `n > 0` as input, will return the sum of the numbers from `1` to `n`.
 
 1. `unsigned long int suffix_sum(unsigned int n, unsigned int s)`.  Write a function that, given positive integers `1 <= n <= 10000` and `1 <= s <= n` as input, will return the sum of the last `s` elements in the sequence from 1 to `n` (inclusive).
 
+1. `unsigned int sum_digits(unsigned int num)`.  Write a function that, given a positive integer `num > 0` as input, will return the sum of all digits in `num` that are divisible by 2.
+
+1. `int v_sorted(const char *A)`.  Write a function that returns 1 if the vowels in the input string `A` appear in non-decreasing order and 0 otherwise.  You can assume this function is not case sensitive.  If the string does not contain any vowels, return 1.
+
+1. `int palindrome(const char *S, unsigned int n)`.  Write a function that will return 1 if an input string `S` of length `n >= 0` is a palindrome and 0 otherwise.  The empty string is a palindrome and a string constituted only by a single character is also a palindrome.
+
 1. `void safe_string(char *s)`.  Write a function that, given a sequence `A` of `n > 1` integers, will return 1 if the input sequence is in strict increasing order, -1 if the sequence is in strict decreasing order, and 0 otherwise.
 
-1. `void reverse(char *str, unsigned int len)`.  Write a function that will reverse (in-place) a sequence of characters of length `0 <= len <= 1000``.
+1. `void reverse(char *str, unsigned int len)`.  Write a function that will reverse (in-place) a sequence of characters of length `0 <= len <= 1000`.
 
 1. `void print_reversed_letters(const char *str)`.  Write a function that takes a string `str` as input and outputs to the standard output the lower-case letters in `str` in reversed order.  For example, if the input is `"csc-212 IS olleh"` your function should print `"hellocsc"` to the `stdout`.
-
-1. `unsigned int sum_digits(unsigned int num)`.  Write a function that, given a positive integer `num > 0` as input, will return the sum of all digits in `num` that are divisible by 2.
 
 1. `int binary_search(const int *A, unsigned int n, int k)`.  Write a function that will return 1 if an element `k` is found in an array of integers `A` and 0 otherwise.  The input to your function is an array of integers `A`, the number of elements in the array `0 < n <= 10000`, and the value of `k`.  Assume that elements in `A` are sorted in non-decreasing order.
 
