@@ -14,8 +14,6 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `int find_min(int* arr, int n)`.  Write a function that returns the minimum element of a given array of `n` integers.
 
-1. `int find_max(int* arr, int n)`.  Write a function that returns the maximum element of a given array of `n` integers.
-
 1. `int len(char* s)`.  Write a function that calculates the length (excluding '\x0') of an input string `s`.
 
 1. `int v_sorted(const char *A)`.  Write a function that returns 1 if the vowels in the input string `A` appear in non-decreasing order and 0 otherwise.  You can assume this function is not case sensitive.  If the string does not contain any vowels, return 1.
