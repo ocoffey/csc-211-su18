@@ -20,7 +20,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `int palindrome(const char *S, unsigned int n)`.  Write a function that will return 1 if an input string `S` of length `n >= 0` is a palindrome and 0 otherwise.  The empty string is a palindrome and a string constituted only by a single character is also a palindrome.
 
-1. `void safe_string(char *s)`.  Write a function that, given a sequence `A` of `n > 1` integers, will return 1 if the input sequence is in strict increasing order, -1 if the sequence is in strict decreasing order, and 0 otherwise.
+1. `int order(const int *A, unsigned int n)`.  Write a function that, given a sequence `A` of `n > 1` integers, will return 1 if the input sequence is in strict increasing order, -1 if the sequence is in strict decreasing order, and 0 otherwise.
 
 1. `void reverse(char *str, unsigned int len)`.  Write a function that will reverse (in-place) a sequence of characters of length `0 <= len <= 1000`.
 
