@@ -16,13 +16,13 @@ Make sure your program runs without errors before proceeding.
 
 ### 1.2 Set a Breakpoint at Line 7
 
-On the left side of your `cs50ide` screen you should see line numbers.  Click just to the left of the line 6 to create a breakpoint, a red circle should appear.
+On the left side of your `cs50ide` screen you should see line numbers.  Click just to the left of the line `7` to create a breakpoint, a red circle should appear.
 
 ### 1.3 Starting the debugger
 
 To start your debugger, run:
 
-``` bash
+```bash
 $ debug50 main
 ```
 
