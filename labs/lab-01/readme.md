@@ -1,10 +1,8 @@
-# Lab 01: Pointers->get_excited()
+# Pointers->get_excited()
 
 In this lab you will use `debug50` to understand how pointers work when working with arrays.  It is particularly important that you have a good handle on pointers and how they work since nearly all of the data structures that we will be creating use pointers.
 
 ## 1. Getting Started
-
-Make sure to update your local repository from Github to your `cs50ide` instance.
 
 ### 1.1 Compiling
 
