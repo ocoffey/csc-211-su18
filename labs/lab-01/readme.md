@@ -115,7 +115,7 @@ number = *numberPtr
 
 The above code accomplishes the same thing twice.  It sets `number` to the first element of our array by dereferencing the array pointer at its first position.  The syntax to dereference the array is `[]` in the case of the first example, and `*` in the case of the second.
 
-> **Question 9:** Step through the code once, pausing at line `37`.  Inspect the value of `number`.  What is its value?  To get the memory address of `number` type `&number` in "Watch Expressions".  What is the address of `number`?  Step through the code once again, pausing at line `40`. Inspect the value of `number` again, what is its value?  Did the value of `number` change?  Why or why not?  Get the memory address of `number` again?  Did the value change?
+> **Question 9:** At this point, you should be paused at line `37`.  Inspect the value of `number`.  What is its value?  To get the memory address of `number` type `&number` in "Watch Expressions".  What is the address of `number`?  Step through the code once again, pausing at line `40`. Inspect the value of `number` again, what is its value?  Did the value of `number` change?  Why or why not?  Get the memory address of `number` again?  Did the value change?
 
 Now that we know that an array pointer simply points to the first element in the array, let's examine how we traverse the array to access it elements.  Let's print out the memory address of the first two elements in `numberPtr`.  To do this we will simultaneously dereference the array element and get its memory address using the `&` operator as shown in the next question.
 
@@ -151,7 +151,7 @@ number = *numberPtr;
 
 So far we have seen how to dereference elements of `numberPtr` without changing the memory location that `numberPtr` points to.  It is possible, however, to update `numberPtr` using pointer arithmetic so that it points to a new memory address going forward.  The above code snippet advances the pointer by three elements.
 
-> **Question 15:** What element number in `array_on_heap` does `numberPtr` point to now?  Using the `array_on_heap[]` syntax, what is the equivalent of `*numberPtr`?  Does `numberPtr[0] == array_on_heap[3]`?
+> **Question 15:** Step over once, to line 52. What element number in `array_on_heap` does `numberPtr` point to now?  Using the `array_on_heap[]` syntax, what is the equivalent of `*numberPtr`?  Does `numberPtr[0] == array_on_heap[3]`?
 
 **BEFORE PROCEEDING**: Let's get out of our debugging session so we can set a new breakpoint.  Either press the play button to let the program run to completion, or click on the terminal and press Control-C.  Next, delete all of your breakpoints by clicking on the red circles you created earlier.  Set a breakpoint at line `61`.
 
