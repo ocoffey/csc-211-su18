@@ -1,4 +1,4 @@
-# Lab 03: Pointers->get_excited()
+# Lab 01: Pointers->get_excited()
 
 In this lab you will use `debug50` to understand how pointers work when working with arrays.  It is particularly important that you have a good handle on pointers and how they work since nearly all of the data structures that we will be creating use pointers.
 
@@ -8,19 +8,19 @@ Make sure to update your local repository from Github to your `cs50ide` instance
 
 ### 1.1 Compiling
 
-Ensure that your terminal is in the same directory as the `main.c` file and then compile your program using the command: `gcc -g main.c -o main`.  The program should compile without errors.
+Ensure that your terminal is in the same directory as the `main.c` file and then compile your program using the command: `gcc -std=c99 -g main.c -o main`.  The program should compile without errors.
 
 This program takes no arguments so the command is `./main`
 
 Make sure your program runs without errors before proceeding.
 
-### 1.2 Set a Breakpoint at Line 6
+### 1.2 Set a Breakpoint at Line 7
 
-On the left side of your `cs50ide` screen you should see line numbers.  Click just to the left of the line numbers and a red circle should appear.
+On the left side of your `cs50ide` screen you should see line numbers.  Click just to the left of the line 6 to create a breakpoint, a red circle should appear.
 
-### 1.3 Running `debug50`
+### 1.3 Starting the debugger
 
-It is the same as before.
+To start your debugger, run:
 
 ``` bash
 $ debug50 main
@@ -37,17 +37,17 @@ int number = 5;
 // Declare a pointer to an int and set it to the address of number
 int *numberPtr = &number;
 ```
-The first line of the program in `main()` declares an `int` called `number` and sets it to the value `5`.  After setting a breakpoint at line `6` and running your program in `debug50` you should pause at the first line of code in `main()`.
+The first line of the program in `main()` declares an `int` called `number` and sets it to the value `5`.  After setting a breakpoint at line `7` and running your program in `debug50` you should pause at the first line of code in `main()`.
 
-> **Question 1:** When you pause at line `6` you should be able to see the value of `number` listed in the debug menu on the right.  What is the value of `number` so far?  Why is it this value?
+> **Question 1:** When you pause at line `7` you should be able to see the value of `number` listed in the debug menu on the right.  What is the value of `number` so far?  Why is it this value?
 
-> **Question 2:** Step through line `6` only once using the step button located just next to the play button in the debug menu (reads "step over" when you hover your mouse over it) and inspect the value of `number` again.  What is the value of `number` now?  Why did it change?
+> **Question 2:** Step through line `7` only once using the step button located just next to the play button in the debug menu (reads "step over" when you hover your mouse over it) and inspect the value of `number` again.  What is the value of `number` now?  Why did it change?
 
 Since you stepped through your code only once so far, you should be at line `9`, the second line of code in `main()`.  Line `9` declares an `int *` called `numberPtr` and sets it to the address of `number` using the ***address-of operator:*** `&`, which is used when ***referencing*** a variable to get its memory address.
 
-> **Question 3:** When you pause at line `9` inspect the value of `numberPtr`.  What is the value of `numberPtr` so far?  Why is it this value?
+> **Question 3:** When you pause at line `10` inspect the value of `numberPtr`.  What is the value of `numberPtr` so far?  Why is it this value?
 
-> **Question 4:** Step through line `9` only once using `step` and inspect the value of `numberPtr` again.  What is the value of `numberPtr` now?  Why did it change?
+> **Question 4:** Step through line `10` only once using `step` and inspect the value of `numberPtr` again.  What is the value of `numberPtr` now?  Why did it change?
 
 ## 3. Change the value of `number` by dereferencing the pointer
 
@@ -56,28 +56,28 @@ Since you stepped through your code only once so far, you should be at line `9`,
 *numberPtr = 10;
 ```
 
-***Dereferencing*** a pointer uses the memory address of the element pointed to and directly accesses the element so it can be updated.
+**Dereferencing** a pointer uses the memory address of the element pointed to and directly accesses the element so it can be updated.
 
-> **Question 5:** Step through the code using the command "step over" button until you reach line `16`.  Inspect the value of number, and step over once more. What is the value of number now?
+> **Question 5:** Step through the code using the command "step over" button until you reach line `17`.  Inspect the value of number, and step over once more. What is the value of number now?
 
-***BEFORE PROCEEDING***: Let's get out of our debugging session so we can set a new breakpoint.  Either press the play button to let the program run to completion, or click on the terminal and press Control-C.  Next, delete your breakpoint at line `6` by clicking on the red circle you created earlier.
+**BEFORE PROCEEDING**: Let's get out of our debugging session so we can set a new breakpoint.  Either press the play button to let the program run to completion, or click on the terminal and press Control-C.  Next, delete your breakpoint at line `7` by clicking on the red circle you created earlier.
 
-Now set a breakpoint at line `33` and type `debug50 main` to run the program again.  You should pause at line `33`.
+Now set a breakpoint at line `34` and type `debug50 main` to run the program again.  You should pause at line `34`.
 
 ## 4. Declaring and instantiating an array on the stack and on the heap using `int *`
 
-The next two assignments create an array on the stack, and an array on the heap.
+The next two declarations create an array on the stack, and an array on the heap.
 
-You should read [this pdf](http://cslibrary.stanford.edu/102/PointersAndMemory.pdf) regarding stack, heap, and memory allocation to familiarize yourself with this topic. Section 1 is simply an introduction to pointers, so you may skip it if you would like, but sections 2 through 4 contain information that is important in understanding how pointers work. You need not do any of the "Extra Optional Material" problems, although they may be used as extra practice in your free time.
+> You may want to read [this pdf](http://cslibrary.stanford.edu/102/PointersAndMemory.pdf) regarding stack, heap, and memory allocation to familiarize yourself with this topic. Section 1 is simply an introduction to pointers, so you may skip it if you would like, but sections 2 through 4 contain information that is important in understanding how pointers work. You need not do any of the "Extra Optional Material" problems, although they may be used as extra practice in your free time.
 
 ```C
 // Declare an int array on the stack
 int array_on_stack[number];
-printf("The address of array_on_stack is: %#", array_on_stack);
+printf("The address of array_on_stack is: %p", array_on_stack);
 
 // Declare an int array on the heap
-int *array_on_heap = new int[number];
-printf("The address of array_on_heap is: %#", array_on_heap);
+int *array_on_heap = (int *) malloc(sizeof(int) * number);
+printf("The address of array_on_heap is: %p", array_on_heap);
 
 // Set each element of array_on_heap
 for (int i = 0; i < number; i++)
@@ -88,7 +88,7 @@ for (int i = 0; i < number; i++)
 
 > **Question 6:** What are the values of `array_on_stack` and `array_on_heap`?  (`debug50` will not show the value of `array_on_stack` by default, simply type the following into "Watch Expressions" at the top to get the value: `array_on_stack` or `&(array_on_stack[0])`)  Plug these values into [this hexadecimal to decimal converter](http://www.binaryhexconverter.com/hex-to-decimal-converter).  What do these values represent?  What is the obvious difference between these two numbers (*Hint*: think magnitude)?  Why are they different?
 
-Notice that we printed the memory addresses of the start of both arrays just like when we printed the value of `numberPtr` which was pointing to `number`.  This is because an array is accessed the same way that an integer is accessed when using a pointer.  In other words `array_on_stack` and `array_on_heap` are pointers also.  The difference is that memory is reserved to store more than one element when instantiating an array. Also, when declaring a pointer meant to point to just one single integer we had to declare an integer separately and assign the pointer a memory address by using the `&` operator.
+Notice that we printed the memory addresses of the start of both arrays just like when we printed the value of `numberPtr` which was pointing to `number`.  This is because an array is accessed the same way that an integer is accessed when using a pointer.  In other words `array_on_stack` and `array_on_heap` *are* pointers.  The difference is that memory is reserved to store more than one element when instantiating an array. Also, when declaring a pointer meant to point to just one single integer we had to declare an integer separately and assign the pointer a memory address by using the `&` operator.
 
 Let's prove to ourselves that `array_on_heap` is a pointer, and that its elements can be accessed using a different pointer.  In the code snippet below we set `numberPtr = array_on_heap`.  We should now be able to access the elements of `array_on_heap` using both pointers.
 
@@ -97,11 +97,11 @@ Let's prove to ourselves that `array_on_heap` is a pointer, and that its element
 numberPtr = array_on_heap;
 ```
 
-> **Question 7:** You should be paused at line `33`.  Step through the code once and inspect the values of `array_on_heap` and `numberPtr`.  What are the values and what do they represent?  Are they the same?
+> **Question 7:** You should be paused at line `34`.  Step through the code once and inspect the values of `array_on_heap` and `numberPtr`.  What are the values and what do they represent?  Are they the same?
 
 > **Question 8:** Now, in "Watch Expressions" type `array_on_heap[3]` and `numberPtr[3]`.  What are the values and what do they represent?  Are they the same?
 
-***NOTE***: It doesn't matter if the array is on the heap or on the stack, the same principles apply.  We could set `numberPtr = array_on_stack` and achieved the same results (assuming we added alements to `array_on_stack` first).
+**NOTE**: It doesn't matter if the array is on the heap or on the stack, the same principles apply.  We could set `numberPtr = array_on_stack` and achieved the same results (assuming we added elements to `array_on_stack` first).
 
 ## 5. Iterating through an array and accessing its elements.
 
@@ -115,7 +115,7 @@ number = *numberPtr
 
 The above code accomplishes the same thing twice.  It sets `number` to the first element of our array by dereferencing the array pointer at its first position.  The syntax to dereference the array is `[]` in the case of the first example, and `*` in the case of the second.
 
-> **Question 9:** Step through the code once, pausing at line `36`.  Inspect the value of `number`.  What is its value?  To get the memory address of `number` type `&number` in "Watch Expressions".  What is the address of `number`?  Step through the code once again, pausing at line `39`. Inspect the value of `number` again, what is its value?  Did the value of `number` change?  Why or why not?  Get the memory address of `number` again?  Did the value change?
+> **Question 9:** Step through the code once, pausing at line `37`.  Inspect the value of `number`.  What is its value?  To get the memory address of `number` type `&number` in "Watch Expressions".  What is the address of `number`?  Step through the code once again, pausing at line `40`. Inspect the value of `number` again, what is its value?  Did the value of `number` change?  Why or why not?  Get the memory address of `number` again?  Did the value change?
 
 Now that we know that an array pointer simply points to the first element in the array, let's examine how we traverse the array to access it elements.  Let's print out the memory address of the first two elements in `numberPtr`.  To do this we will simultaneously dereference the array element and get its memory address using the `&` operator as shown in the next question.
 
@@ -127,7 +127,7 @@ The algebraic difference from the previous question gives us the difference, in 
 
 > **Question 12:** How many bytes does a single memory address represent?  How many bits?
 
-The next two lines of code are again, equivalent, except now we are getting the third element in our array.  The first line is self explanatory, using the `[]` syntax to dereference the array pointer.  The second example, however, uses pointer arithmetic to accomplish the same thing.  The syntax `numberPtr+2` tells the program to start at the first element of `numberPtr` and advance two more elements.  Step through these next two lines of code (you should pause at line `48`) and watch `number` each time to prove this to yourself.
+The next two lines of code are again, equivalent, except now we are getting the third element in our array.  The first line is self explanatory, using the `[]` syntax to dereference the array pointer.  The second example, however, uses pointer arithmetic to accomplish the same thing.  The syntax `numberPtr+2` tells the program to start at the first element of `numberPtr` and advance two more elements.  Step through these next two lines of code (you should pause at line `49`) and watch `number` each time to prove this to yourself.
 
 ```C
 // Dereference the third element of the array
@@ -153,7 +153,7 @@ So far we have seen how to dereference elements of `numberPtr` without changing 
 
 > **Question 15:** What element number in `array_on_heap` does `numberPtr` point to now?  Using the `array_on_heap[]` syntax, what is the equivalent of `*numberPtr`?  Does `numberPtr[0] == array_on_heap[3]`?
 
-***BEFORE PROCEEDING***: Let's get out of our debugging session so we can set a new breakpoint.  Either press the play button to let the program run to completion, or click on the terminal and press Control-C.  Next, delete all of your breakpoints by clicking on the red circle you created earlier.  Set a breakpoint at line `60`.
+**BEFORE PROCEEDING**: Let's get out of our debugging session so we can set a new breakpoint.  Either press the play button to let the program run to completion, or click on the terminal and press Control-C.  Next, delete all of your breakpoints by clicking on the red circles you created earlier.  Set a breakpoint at line `61`.
 
 ```C
 // Make numberPtr point to array_on_stack
@@ -171,7 +171,7 @@ for (int i = 0; i < number; i++)
 
 Now that we have seen that arithmetic operations can be applied to pointers, let's iterate through an array by incrementing the pointer one memory address at a time using the unary operator `++`.  In the above example `numberPtr = array_on_stack`, so now `numberPtr` can be used to access the elements in `array_on_stack` by setting these pointers equal to each other.  In the `for` loop, `numberPtr` is incremented by one for each pass of the loop.  However, the dereference operator `*`, and the assignment operator `=`, take precedence over the unary operator `++`.  This means that the current value of `numberPtr` gets dereferenced and updated before we increment the memory address.
 
-> **Question 16:** Step through each iteration of the `for` loop beginning at line `62`.  Type `numberPtr` in "Watch Expressions" and inspect its value until the loop terminates and you are paused at line `68`.  Write down the value of `numberPtr` for each iteration.
+> **Question 16:** Step through each iteration of the `for` loop beginning at line `63`.  Type `numberPtr` in "Watch Expressions" and inspect its value until the loop terminates and you are paused at line `67`.  Write down the value of `numberPtr` for each iteration.
 
 > **Question 17:** When we increment `numberPtr` by one, what is the algebraic difference between the value of `numberPtr` before and after incrementing.  Why?
 
@@ -179,7 +179,7 @@ Now that we have seen that arithmetic operations can be applied to pointers, let
 
 ## 6. (Optional) Casting an `int *` as a `char *` to decode a secret message.
 
-***BEFORE PROCEEDING*** Copy and paste the contents of `secret-message.c` to your current working directory.  Compile and run the program.  Take a look at the code, is it clear what is going on?
+**BEFORE PROCEEDING** Ensure `secret-message.c` is in your current working directory.  Compile and run the program.  Take a look at the code, is it clear what is going on?
 
 In this last code snippet we are doing something tricky.  We declare an integer array `secret_message` and assign each element in the array some number.  We then pass each element of this array to the function `printMessage()`.  The odd thing is that `printMessage()` expects a `char *` to be passed as an argument, not an `int` or an `int *`.  So how did we make this happen without the compiler complaining?  The trick is to cast the reference to each element in `secret_message` as a `char *` so that the function thinks the reference is pointing to a `char` and not an `int`.  The program doesn't know any better, all it knows is that we are passing some memory address, and that we told it that the memory address points to some character or string of characters.
 
