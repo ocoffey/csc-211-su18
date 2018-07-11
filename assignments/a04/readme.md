@@ -6,7 +6,7 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `void palindrome(char *s)`. Create a function that takes a parameter `s` and prints whether or not `s` is a palindrome.  The output should be `s <is|is not> a palindrome` where `<is|is not>` is determined by whether or not the string is a palindrome.  For example, if `s = "abcba"` then the output would be `abcba is a palindrome`.
 
-1. `void array_builder(int *A, int len)`.  Create a function that takes an array of integers `A` and an integer `len>0` as parameters.  The function should then print all of the numbers in the array formatted as follows: `[A1, A2, ..., Alen]`.  Note the brackets, and the commas are all necessary.  If `n = 4`, and the array contains the numbers `11 12 30 4`, the output would be: `[11, 12, 30, 4]`.
+1. `void array_builder(int *A, int len)`.  Create a function that takes an array of integers `A` and an integer `len>0` as parameters.  The function should then print all of the numbers in the array formatted as follows: `[A1, A2, ..., Alen]`.  Note the brackets, and the commas are all necessary.  If `len = 4`, and the array contains the numbers `11 12 30 4`, the output would be: `[11, 12, 30, 4]`.
 
 1. `void safe_string(char *s)`.  Create a function that takes a string `s`, then prints that string with all invalid characters removed.  For this problem, all characters are invalid **except** lowercase English letters.  For example, if `s = "h3l10 W0r1D"`, the output would be `hlr`.
 
@@ -14,11 +14,11 @@ This assignment is to be completed individually.  You are not allowed to share y
 
 1. `char most_frequent(char *s)`.  Write a function that takes a string `s`, and returns the most frequent character in `s`.  For example, in the string `"aaabbc"` the most frequent character is `'a'` (break ties by chosing the leftmost character).
 
-1. `void selective_filter(char *s1, char *s2)`.  Write a function that takes two strings `s1` and `s2`, and prints the first string, where all characters in the second string have been removed.  For example: given `"hello world"` and `"d owl"`, the output should be `"herld"`, as characters `'d', ' ', 'o', 'w'`, and `'l'` have been removed.
+1. `void selective_filter(char *s1, char *s2)`.  Write a function that takes two strings `s1` and `s2`, and prints the first string, where all characters in the second string have been removed (case sensitive).  For example: given `"hello world"` and `"d owl"`, the output should be `"her"`, as characters `'d', ' ', 'o', 'w'`, and `'l'` have been removed.
 
 1. `void palindrome_rearranging(char *s)`.  Write a function that takes a string `s`, then prints whether or not that string can be *rearranged* to form a palindrome.  For example "aabb" can be rearranged, thus it should print `"True"`. `"abca"` cannot be rearranged into a palindrome, thus it should print `"False"`.
 
-1. `unsigned long any2dec(char *num, unsigned int b)`.  Write a function that returns the decimal integer number that corresponds to the number $$num$$ (assume upper-case letters) in a given base `b, 1 < b <= 16`.
+1. `unsigned long any2dec(char *num, unsigned int b)`.  Write a function that returns the decimal integer number that corresponds to the number `num` (assume upper-case letters) in a given base `b, 1 < b <= 16`.
 
 1. `void hex2rgb(char *hex)`.  Write a function that takes a string `hex`.  The parameter `hex` contains a hex color code.  Your function should convert the hex color code into a RGB value.  For example, if the input is `"#04F3A8"`, your function should print `"rgb(4,243,168)"` to the standard output.
 
